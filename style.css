@@ -1,0 +1,183 @@
+/* 1. إعدادات عامة للموقع كله */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #0f172a; /* لون خلفية كحلي غامق جداً (مودرن) */
+    color: #e2e8f0; /* لون الكلام أبيض مائل للرمادي */
+    line-height: 1.6;
+}
+
+/* 2. شريط التنقل (Navbar) */
+header {
+    background-color: #1e293b; /* لون أفتح شوية من الخلفية */
+    padding: 20px 50px;
+    position: sticky; /* يخلي الشريط يثبت فوق وهو نازل */
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* يوزع اللوجو على اليمين واللينكات على الشمال */
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #38bdf8; /* لون أزرق سماوي */
+}
+
+.nav-links {
+    list-style: none; /* بيشيل النقط السودة */
+    display: flex;
+    gap: 20px; /* مسافة بين كل لينك والتاني */
+}
+
+.nav-links a {
+    color: #e2e8f0;
+    text-decoration: none; /* بيشيل الخط اللي تحت اللينك */
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8; /* اللون يتغير لما الماوس ييجي عليه */
+}
+
+/* 3. القسم الرئيسي (Hero) */
+.hero {
+    height: 80vh; /* ياخد 80% من طول الشاشة */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #38bdf8; /* تلوين اسمك بس */
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0ea5e9; /* لون أغمق شوية لما نقف عليه */
+}
+
+/* 4. قسم المهارات (Skills) */
+.skills-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1e293b;
+}
+
+.skills-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* لو الشاشة صغيرة ينزلوا تحت بعض */
+}
+
+.skill-card {
+    background-color: #334155;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* البطاقة تطلع لفوق شوية */
+    background-color: #475569;
+}
+
+/* 5. قسم المشاريع (Projects) */
+.projects-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    text-align: right;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 6. التذييل (Footer) */
+footer {
+    background-color: #0b1120;
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+    font-size: 14px;
+}
